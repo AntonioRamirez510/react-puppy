@@ -2,14 +2,22 @@
   font-family:cursive;
   color:white;
   background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
 }
-  #root {
-  max-width: 1280px;
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root {
+  max-width: 600px;
+  min-width: 450px;
   margin: 0px;
   text-align: center;
   background-color: white;
   border-radius: 7px;
-  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
 }
 h1{
   background-color: darkcyan;
@@ -17,31 +25,58 @@ h1{
   border-radius: 7px;
   margin: 3px;
 }
+h1:hover{
+cursor:default;
+}
+h3{
+  color:darkcyan;
+}
 p{
   background-color: darkcyan;
   border: orange solid;
   border-radius: 7px;
   margin: 3px;
+  min-width: 450px;
+}
+p:hover{
+  background-color: white;
+  color: orange;
+  border:darkcyan solid;
+  cursor:pointer;
 }
 
+/* FeatPup */
 div{
-  background-color: darkcyan;
+  background-color: orange;
+  color: white;
+  border:darkcyan solid;
   border-radius: 7px;
-  border-left: orange solid;
-  border-right: orange solid;
+  min-width: 444px;
+  margin:3px;
+}
+div:hover{
+  cursor: default;
 }
 h2{
-  background-color: darkcyan;
+  background-color: orange;
   border-radius: 7px;
-  border-top: orange solid;
-}
-li{
-  border-radius: 7px;
-  background-color: darkcyan;
+  color:white;
 }
 ul{
-  border-radius: 7px;
-  background-color: darkcyan;
+  background-color: orange;
   list-style: none;
-  border-bottom: orange solid;
+  padding:0px;
+  margin:0px;
+  text-align: left;
+  display:flex;
+  justify-content: space-evenly;
+  width:100%;
+}
+li{
+  background-color: orange;
+  color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+  width:100%;
 }

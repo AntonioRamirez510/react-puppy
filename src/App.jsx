@@ -16,6 +16,8 @@ function App() {
   return (
     <>
     <h1>Puppies!</h1>
+    <br></br>
+    <h3>Go ahead! Click a dog!</h3>
     <section className="App">
       {puppies.map(puppy => {
         return <p onClick={()=>clickPup(puppy)}
@@ -25,16 +27,26 @@ function App() {
         </p>
       })}
       {/* conditional rendering for FeatPup */}
-      { featPupId &&
-      <div>
-      <h2>Name: {featuredPup.name}</h2>
-         <ul>
-          <li> age: {featuredPup.age}</li>
-          <li>Email: {featuredPup.email}</li>
-          </ul>
-      </div>
-      }
     </section>
+    <br></br>
+      { featPupId &&
+      <>
+      <h3>Check out these details about {featuredPup.name}</h3>
+      <div>
+      <h2>{featuredPup.name}</h2>
+      <section id="featPupDetails">
+        <ul id="age">
+          <li>age: </li>
+          <li>{featuredPup.age}</li>
+        </ul>
+         <ul id="email">
+          <li>email: </li>
+          <li>{featuredPup.email}</li>
+          </ul>
+      </section>
+      </div>
+      </>
+      }
     </>
   )
 }
