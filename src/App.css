@@ -1,5 +1,47 @@
-#root {
+*{
+  font-family:cursive;
+  color:white;
+  background-color: rgb(255, 255, 255);
+}
+  #root {
   max-width: 1280px;
   margin: 0px;
   text-align: center;
+  background-color: white;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+h1{
+  background-color: darkcyan;
+  border: orange solid;
+  border-radius: 7px;
+  margin: 3px;
+}
+p{
+  background-color: darkcyan;
+  border: orange solid;
+  border-radius: 7px;
+  margin: 3px;
+}
+
+div{
+  background-color: darkcyan;
+  border-radius: 7px;
+  border-left: orange solid;
+  border-right: orange solid;
+}
+h2{
+  background-color: darkcyan;
+  border-radius: 7px;
+  border-top: orange solid;
+}
+li{
+  border-radius: 7px;
+  background-color: darkcyan;
+}
+ul{
+  border-radius: 7px;
+  background-color: darkcyan;
+  list-style: none;
+  border-bottom: orange solid;
 }
